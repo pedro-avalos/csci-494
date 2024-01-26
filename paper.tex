@@ -1,0 +1,37 @@
+\documentclass[onecolumn, 12pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{setspace}
+
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{footnote}
+\usepackage{endnotes}
+\usepackage[bottom, multiple]{footmisc}
+\usepackage[level]{fmtcount}
+
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\graphicspath{ {./graphics} }
+
+\usepackage[style=ieee, backend=biber, autocite=footnote]{biblatex}
+\addbibresource{sources.bib}
+
+\usepackage[pdfusetitle, hidelinks]{hyperref}
+
+\makesavenoteenv{figure}
+\SetCiteCommand{\footcite}
+
+\title{Senior Thesis}
+\author{Pedro Avalos Jim\'enez, Niklas Anderson}
+\date{Wheaton College\\\today}
+
+\begin{document}
+\maketitle
+
+\end{document}
