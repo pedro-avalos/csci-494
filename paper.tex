@@ -38,7 +38,7 @@
 
 \subsection{Background Information}
 
-\begin{displayquote}
+\blockcquote{barlow:wine}{%
   \textins{T}hat ideas should freely spread from one to another over the globe,
   for the moral and mutual instruction of man, and improvement of his
   condition, seems to have been peculiarly and benevolently designed by nature,
@@ -46,8 +46,9 @@
   their density at any point, and like the air in which we breathe, move, and
   have our physical being, incapable of confinement or exclusive appropriation.
   Inventions then cannot, in nature, be a subject of property.
-  Thomas Jefferson~\cite{barlow:wine}
-\end{displayquote}
+  \emph{Thomas Jefferson}%
+}
+
 It is generally accepted that piracy is an illegal activity, but what is often overlooked
 is the legitimate role that piracy plays in a variety of contexts. When it comes to
 subverting oppressive regimes, for instance, the tools that piracy provides are
@@ -161,7 +162,7 @@ blocking of specific websites in response to unrest that would ultimately unseat
 government.} Even more extreme is when governments shutdown the internet entirely to
 quickly cease the spread of information. This is exactly what happened on January 28, 2011
 in Egypt: \textcquote{current:jigsaw} {Almost simultaneously, about 3,500 individual
-Border Gateway Protocol routes [...] were withdrawn on orders from the Egyptian
+Border Gateway Protocol routes \textelp{} were withdrawn on orders from the Egyptian
 government, cutting the country off from the rest of the world and bringing internal
 communication to a halt.} Fortunately, as already mentioned earlier, piracy excels at
 spreading information even when there are those that do not want it spread. BitTorrent is
@@ -249,22 +250,59 @@ limitations may alleviate penalties, but repeat offences may also lose one's
 favor in these cases.~\cite{felonies.org}
 
 \subsubsection{Malware}
+The intersection of trust and computing is not a new topic. Ken Thompson, the
+creator of the Unix operating system, made this the topic of his Turing Award
+lecture. In his lecture, he poses the question,
+\textcquote[761]{thompson:trust}[.]{%
+  to what extent should one trust a statement that
+  a program is free of Trojan Horses? Perhaps it is more important to trust the
+  people who wrote the software%
+} With piracy, however, we add an additional actor in this chain of trust.
+Thompson's lecture focuses solely on the developer-to-user relationship of
+trust, with the assumption of an open-source project. Thompson, thus, comments
+on how \textcquote[763]{thompson:trust}{%
+  \textins{s}uch blatant code would not go undetected for long. Even the most
+  casual perusal of the source of the C compiler would raise suspicions%
+} When piracy is the method of distribution, however, the assumption of
+equality between the source code and the delivered software does not hold. The
+pirated software may have been tampered with, and the user has no simple way to
+detect changes in the file(s) without doing some (often) complicated forensic
+work. Although anti-malware tools may mitigate these issues, the problem of
+trust still holds, and the anti-malware tools are not perfect. The character of
+the seeder must be questioned, and it already stands on shaky ground if the
+legality of their actions speaks for their moral compass and trustworthiness.
+
 Piracy may openly distribute dangerous illegal content, but arguably the
 larger threat is the dangerous content that remains undisclosed. Piracy
 circumvents mainline distribution channels that may incorporate secure policies
-of data integrity, authenticity, and privacy. Some piracy tools provide
-some ways to vet the authenticity of an uploader based on past uploads or based
-on the user's relationship with the piracy/torrenting
-site\footnote{%
-  \href{https://pirates-forum.org/Thread-ThePirateBay-Want-Trusted-VIP-Status-Pink-Green-Skull-See-Here}{ThePirateBay},
-  for example provides icons to display whether a user is \emph{Trusted},
-  \emph{VIP}, or \emph{Moderator}%
-}, but not all sites provide these metrics or warnings for the average end-user.
-Instead, the burden is often on the end-user, and it is not unfair to assume
-that the average person would not be able to analyze downloaded software for
-malware.
+of data integrity, authenticity, and privacy. There are piracy tools and sites
+that provide some ways to vet the authenticity of a user based on the user's
+previous history and relationship with the piracy community. For example,
+ThePirateBay, one of the most popular pirating sites, displays the status or
+class of their users and holds these users to higher standards in order to
+retain trust with the site's end users.~\cite{suprbay:status} Nevertheless, not
+all sites provide these metrics or warnings for the average end-user. Instead,
+the burden is often on the end-user, and it is not unfair to assume that the
+average person would not be able to analyze downloaded software for malware.
 
-% TODO: Add an example of malware distributed via piracy
+The relationship between piracy and malware distribution is not just a
+theoretical argument against the use of piracy. Although research has remained
+rather theoretical in this area, some researchers have performed empirical
+studies to find a stronger link between more prevalent use of piracy and
+malware presence. The study by Mezzour et al. reveals that piracy is not equal
+around the globe, and it poses serious problems especially for people in
+poor countries where piracy is widespread. Although they hypothesized, like
+other researchers, that \textcquote{mezzour:empirical-study}[,]{%
+  cyber criminals would target rich countries because the monetary benefit of
+  compromising rich people's computers is higher
+} but they found that, \textcquote{mezzour:empirical-study}[.]{%
+  surprisingly, poor countries in Sub-Saharan Africa because of the low cost of
+  attacking computers in this region%
+} Mezzour et al. conclude that, due to the high correlation between piracy
+and malware, one of the policy implications is that Sub-Saharan Africa requires
+reducing piracy to combat the spread of malware.
+
+% TODO: Add an example of malware distributed via piracy, see pcmag source
 
 \subsubsection{Illegal content}
 Piracy, as discussed above, provides a way to distribute illegal content. This
@@ -282,7 +320,7 @@ that invested time, money, and effort into the content. In this sense, piracy
 is stealing from the individuals' revenue and the government's tax
 revenue.~\cite{congress:pirating-the-american-dream}
 
-\textcquote{mrad:effects-of-ip}[.]{%
+\blockcquote{mrad:effects-of-ip}[.]{%
   According to Gould and Gruben (1996), IPRs protection stimulates economic
   growth if it is accompanied by a policy of trade liberalization. By
   encouraging initiatives to innovate, IPRs protection may influence the
@@ -296,26 +334,32 @@ Piracy, therefore, discourages innovation in the capitalist marketplace.
 \section{Christian Response}
 A Christian response to piracy should honestly take into account both sides of
 the debate. As shown above, piracy does have some merit to it. Christians have
-to admit that piracy-promoting tools do enable 
+to admit that piracy-promoting tools do enable equal access for those in need,
+but, at the same time, we must recognize that the human nature is not perfect,
+but is full of evil thoughts (Matthew 15:19). Our human corruption manifests
+itself in many ways through our lives and actions, but, as explored in this
+paper, it also presents itself in the software we share. Our deceitful hearts
+(Jeremiah 17:9) make it hard to trust the software we download, but reckless
+use of piracy ignores advice and is therefore the way of the fool where people
+fall (Proverbs 12:15, 11:14).
 
-% 1 Peter 2:13-17
-% Romans 13:4-5
+On the one hand, a Christian use of piracy should be respectful of authority.
+We are called to do this regardless of punishment, but as a matter of
+conscience (Romans 13:4--5). We are to exercise our freedom respectfully and
+not as a cover-up for evil (1 Peter 2:13--7). In other words, we should consider
+both the consequences we may incur and the image we portray carefully before
+making a conclusion about the practice of piracy. A proper consideration of
+privacy should not ignore the serious ramifications and associations that come
+with it.
 
-\begin{enumerate}
-  \item Drawing distinctions: Paywall to information is different from
-    withholding information for sake of security
-
-  \item Paywalls provide the means of living for artists, writers, \&c. Providing
-    ways to circumvent these when unnecessary may hinder their livelihoods.
-
-  \item Betterment of mankind as a whole, should not be behind a paywall
-
-  \item Piracy provides an avenue for missionary outreach; piracy provides
-    means of secret dissemination within an oppressive regime.
-
-  \item Piracy provides the means for access to content/information without
-    much accountability
-\end{enumerate}
+On the other hand, piracy, when used properly, is able to be used for good
+causes that serve God rather than men (Acts 5:29). Academic articles,
+especially from medical journals, are crucial for the development of humanity
+and the saving of lives. In these cases, when capitalist motivators impede these
+greater goods, one should not turn a blind eye, but instead we should remember
+the poor and those in need (Proverbs 19:17, 22:9, 15:11; Galatians 2:10). Cases
+like these present valid concerns in which piracy appears to provide a viable
+solution to the problems brought about by human greed.
 
 \section{Conclusion}
 In closing, piracy and its related tools are not as cut and dry of an issue as one might
