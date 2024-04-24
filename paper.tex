@@ -9,22 +9,15 @@
 
 \usepackage[english]{babel}
 \usepackage{csquotes}
+\usepackage{epigraph}
 \usepackage{footnote}
-\usepackage{endnotes}
 \usepackage[bottom, multiple]{footmisc}
-\usepackage[level]{fmtcount}
-
-\usepackage{float}
-\usepackage{graphicx}
-\usepackage{wrapfig}
-\graphicspath{ {./graphics} }
 
 \usepackage[style=ieee, backend=biber]{biblatex}
 \addbibresource{sources.bib}
 
 \usepackage[pdfusetitle, hidelinks]{hyperref}
 
-\makesavenoteenv{figure}
 \SetCiteCommand{\cite}
 
 \title{Sailing the High Seas: A Christian Exploration of Piracy}
@@ -32,24 +25,21 @@
 \date{Wheaton College\\\today}
 
 \begin{document}
-\maketitle
-
 \begin{refsection}
-
-\section{Introduction}
-
-\subsection{Background Information}
-\blockcquote{barlow:wine}{%
+\maketitle
+\epigraph{%
   \textins{T}hat ideas should freely spread from one to another over the globe,
   for the moral and mutual instruction of man, and improvement of his
   condition, seems to have been peculiarly and benevolently designed by nature,
   when she made them, like fire, expansible over all space, without lessening
   their density at any point, and like the air in which we breathe, move, and
   have our physical being, incapable of confinement or exclusive appropriation.
-  Inventions then cannot, in nature, be a subject of property.
-  \emph{Thomas Jefferson}%
-}
+  Inventions then cannot, in nature, be a subject of property.%
+}{Thomas Jefferson~\cite{barlow:wine}}
 
+
+\section{Introduction}
+\subsection{Background Information}
 It is generally accepted that piracy is an illegal activity, but what is often overlooked
 is the legitimate role that piracy plays in a variety of contexts. When it comes to
 subverting oppressive regimes, for instance, the tools that piracy provides are
