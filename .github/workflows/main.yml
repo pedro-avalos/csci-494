@@ -1,6 +1,8 @@
 name: LaTeX compilation
 run-name: ${{ github.actor }} is compiling the PDF
 on: [push]
+permissions:
+  contents: write
 jobs:
   build_latex:
     runs-on: ubuntu-latest
