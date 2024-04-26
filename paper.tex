@@ -6,6 +6,8 @@
 
 \usepackage[letterpaper, margin=1in]{geometry}
 \usepackage{setspace}
+\usepackage{titling}
+\usepackage{authblk}
 
 \usepackage[english]{babel}
 \usepackage{csquotes}
@@ -15,14 +17,17 @@
 
 \usepackage[style=ieee, backend=biber]{biblatex}
 \addbibresource{sources.bib}
-
-\usepackage[pdfusetitle, hidelinks]{hyperref}
-
 \SetCiteCommand{\cite}
 
+\usepackage[hidelinks]{hyperref}
+
+\makeatletter
 \title{Sailing the High Seas: A Christian Exploration of Piracy}
-\author{Pedro J. Avalos Jim\'enez, Niklas Anderson}
-\date{Wheaton College\\\today}
+\author{Pedro Avalos Jim\'enez}
+\author{Niklas Anderson}
+\affil{Wheaton College}
+\date{\today}
+\makeatother
 
 \begin{document}
 \begin{refsection}
